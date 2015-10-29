@@ -223,6 +223,7 @@ TEST(TMatrix, can_multiply_matrixes_with_equal_size)//Можно найти произведение д
 TEST(TVector, cant_multiply_vectors_with_not_equal_size)
 {
 	TMatrix<int> m1(4), m2(5);
+	//m = m1*m2;
 	
 	ASSERT_ANY_THROW(TMatrix<int> m(m1 * m2));
 }

@@ -1,0 +1,30 @@
+﻿Build started 29.10.2015 22:49:59.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\sample_utmatrix.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\sample_utmatrix.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\samples\sample_matrix.cpp
+         sample_matrix.cpp
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(166) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(209): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
+                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151) : see declaration of 'TMatrix<ValType>::operator *'
+                 definition
+                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
+                 existing declarations
+                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 c:\users\liza\mp2-lab2-matrix\samples\sample_matrix.cpp(14) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+                 with
+                 [
+                     ValType=int
+                 ]
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C2143: syntax error : missing ',' before '&'
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.90
