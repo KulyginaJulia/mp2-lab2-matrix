@@ -32,7 +32,6 @@ TEST(TVector, can_create_copied_vector)
 TEST(TVector, copied_vector_is_equal_to_source_one)
 {
 	TVector<int> v1(5);
-	
 
 	v1 = v1 + 5;
 	TVector<int> v2(5);

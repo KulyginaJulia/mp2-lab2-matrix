@@ -138,6 +138,7 @@ public:
   TMatrix& operator= (const TMatrix &mt);        // присваивание
   TMatrix  operator+ (const TMatrix &mt);        // сложение
   TMatrix  operator- (const TMatrix &mt);        // вычитание
+  TMatrix  operator* (const Tmatrix &mt);		 //умножение двух матриц
 
   // ввод / вывод
   friend istream& operator>>(istream &in, TMatrix &mt)
