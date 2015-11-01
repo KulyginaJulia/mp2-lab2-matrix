@@ -31,24 +31,26 @@ TEST(TVector, can_create_copied_vector)
 
 TEST(TVector, copied_vector_is_equal_to_source_one)
 {
-	TVector<int> v1(5);
+	int size = 2;
+ 	TVector<int> a(size);
 
-	v1 = v1 + 5;
-	TVector<int> v2(5);
-	v2 = v1;
-	
-	EXPECT_EQ(v1, v2);
+ 	a[0] = 1;
+ 	a[1] = 2;
+ 	TVector<int> b=a;
+
+ 	EXPECT_EQ(1, b[0]);
+ 	EXPECT_EQ(2, b[1]);
 }
 
 TEST(TVector, copied_vector_has_its_own_memory)
 {
-	TVector<int> v1(8);
-	TVector<int> v2(8);
+	int size = 2;
+	TVector<int> v1(size);
+	TVector<int> v2(v1);
 
-	v2 = v1;
 	v1[0] = 5;
 	
-	EXPECT_NE(v1, v2);
+	EXPECT_NE(v1[0], v2[0]);
 }
 
 TEST(TVector, can_get_size)
@@ -178,7 +180,7 @@ TEST(TVector, can_add_scalar_to_vector)
 	for (int i = 0; i < 4; i++ )
 		v2[i] = 5;
 
-	EXPECT_EQ(v1, v2);
+	EXPECT_EQ(1, v1 == v2);
 }
 
 TEST(TVector, can_subtract_scalar_from_vector)
@@ -190,7 +192,7 @@ TEST(TVector, can_subtract_scalar_from_vector)
 	for (int i = 0; i < 4; i++ )
 		v2[i] = -5;
 
-	EXPECT_EQ(v1, v2);
+	EXPECT_EQ(1, v1 == v2);
 }
 
 TEST(TVector, can_multiply_scalar_by_vector)
@@ -202,7 +204,7 @@ TEST(TVector, can_multiply_scalar_by_vector)
 	for (int i = 0; i < 4; i++ )
 		v2[i] = 0;
 
-	EXPECT_EQ(v1, v2);
+	EXPECT_EQ(1, v1 == v2);
 }
 
 TEST(TVector, can_add_vectors_with_equal_size) // можно сложить вектора с равными размерами
@@ -215,10 +217,7 @@ TEST(TVector, can_add_vectors_with_equal_size) // можно сложить вектора с равным
 	v2[0] = 2;
 	v3 = v1 + v2;
 	
-	for (int i = 0; i < 4; i++ )
-		v2[i] = v2[i] + v1[i];
-
-	EXPECT_EQ(v3, v2);
+	EXPECT_EQ(3, v3[0]);
 }
 
 TEST(TVector, cant_add_vectors_with_not_equal_size)//нельзя складывать векторы с разными размерами
@@ -242,7 +241,7 @@ TEST(TVector, can_subtract_vectors_with_equal_size)//можно вычитать вектора с ра
 	for (int i = 0; i < 4; i++ )
 		v2[i] = v2[i] - v1[i];
 
-	EXPECT_EQ(v3, v2);
+	EXPECT_EQ(1, v3 == v2);
 }
 
 TEST(TVector, cant_subtract_vectors_with_not_equal_size)
@@ -253,7 +252,7 @@ TEST(TVector, cant_subtract_vectors_with_not_equal_size)
 	ASSERT_ANY_THROW(TVector<int> v(v2 - v1));
 }
 
-TEST(TVector, can_multiply_vectors_with_equal_size)//Можно найти скалярное произведение двух векторов с одинаковым
+TEST(TVector, can_multiply_vectors_with_equal_size)//Можно найти скалярное произведение двух векторов с одинаковым размером
 {
 	TVector<int> v1(4);
 	TVector<int> v2(4);
@@ -262,11 +261,8 @@ TEST(TVector, can_multiply_vectors_with_equal_size)//Можно найти скалярное произ
 	v1[0] = 1;
 	v2[0] = 2;
 	v3 = v2 * v1;
-	
-	for (int i = 0; i < 4; i++ )
-		v4 = v4 + (v2[i] * v1[i]);
 
-	EXPECT_EQ(v3, v2);
+	EXPECT_EQ(v3, 2);
 }
 
 TEST(TVector, cant_multiply_vectors_with_not_equal_size)
@@ -276,4 +272,3 @@ TEST(TVector, cant_multiply_vectors_with_not_equal_size)
 	
 	ASSERT_ANY_THROW(TVector<int> v(v1 * v2));
 }
-

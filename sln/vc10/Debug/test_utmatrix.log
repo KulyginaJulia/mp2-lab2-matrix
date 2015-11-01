@@ -1,72 +1,21 @@
-﻿Build started 29.10.2015 22:50:03.
-     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 3 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\test_utmatrix.lastbuildstate".
-       InitializeBuildStatus:
+﻿Build started 01.11.2015 15:27:49.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
          Touching "Debug\test_utmatrix.unsuccessfulbuild".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_main.cpp ..\..\test\test_tmatrix.cpp ..\..\test\test_tvector.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_tvector.cpp
          test_tvector.cpp
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(166) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C2143: syntax error : missing ',' before '&'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(209): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151) : see declaration of 'TMatrix<ValType>::operator *'
-                 definition
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
-                 existing declarations
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-         test_tmatrix.cpp
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(166) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C2143: syntax error : missing ',' before '&'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(209): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151) : see declaration of 'TMatrix<ValType>::operator *'
-                 definition
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
-                 existing declarations
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(7) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-                 with
-                 [
-                     ValType=int
-                 ]
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): error C2143: syntax error : missing ',' before '&'
-     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(212): error C2679: binary '*' : no operator found which takes a right-hand operand of type 'TMatrix<ValType>' (or there is no acceptable conversion)
-                 with
-                 [
-                     ValType=int
-                 ]
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): could be 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-                 with
-                 [
-                     ValType=int
-                 ]
-                 while trying to match the argument list '(TMatrix<ValType>, TMatrix<ValType>)'
-                 with
-                 [
-                     ValType=int
-                 ]
-     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(228): error C2679: binary '*' : no operator found which takes a right-hand operand of type 'TMatrix<ValType>' (or there is no acceptable conversion)
-                 with
-                 [
-                     ValType=int
-                 ]
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(151): could be 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-                 with
-                 [
-                     ValType=int
-                 ]
-                 while trying to match the argument list '(TMatrix<ValType>, TMatrix<ValType>)'
-                 with
-                 [
-                     ValType=int
-                 ]
-         test_main.cpp
-         Generating Code...
-     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (rebuild target(s)) -- FAILED.
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_utmatrix.exe.embed.manifest.res" Debug\test_utmatrix_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:Debug gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_utmatrix.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.lib" /MACHINE:X86 Debug\test_utmatrix.exe.embed.manifest.res
+         Debug\test_main.obj
+         Debug\test_tmatrix.obj
+         Debug\test_tvector.obj
+         "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib"
+     1>LINK : fatal error LNK1104: cannot open file 'gtest.lib'
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:04.05
+Time Elapsed 00:00:02.17

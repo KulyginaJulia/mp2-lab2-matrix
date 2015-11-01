@@ -1,0 +1,70 @@
+﻿Build started 01.11.2015 16:16:26.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\test_utmatrix.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release\test_utmatrix.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_main.cpp ..\..\test\test_tmatrix.cpp ..\..\test\test_tvector.cpp
+         test_main.cpp
+         test_tmatrix.cpp
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(262) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(362): error C2059: syntax error : ''template<''
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2955: 'TMatrix' : use of class template requires template argument list
+                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(234) : see declaration of 'TMatrix'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2143: syntax error : missing ';' before '{'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2447: '{' : missing function header (old-style formal list?)
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(375): warning C4138: '*/' found outside of comment
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2059: syntax error : 'namespace'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2143: syntax error : missing ';' before '{'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2065: 'auto_ptr' : undeclared identifier
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1413) : see reference to class template instantiation 'std::tr1::_Ptr_base<_Ty>' being compiled
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2065: '_Other' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2182: '_Reset' : illegal use of type 'void'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2365: 'std::tr1::_Ptr_base<_Ty>::_Reset' : redefinition; previous definition was 'member function'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2998: 'int _Reset' : cannot be a template definition
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1503): error C2061: syntax error : identifier 'auto_ptr'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1708) : see reference to class template instantiation 'std::tr1::shared_ptr<_Ty>' being compiled
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2065: 'auto_ptr' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2065: '_Right' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2365: 'std::tr1::shared_ptr<_Ty>::operator =' : redefinition; previous definition was 'member function'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         test_tvector.cpp
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(262) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(362): error C2059: syntax error : ''template<''
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2955: 'TMatrix' : use of class template requires template argument list
+                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(234) : see declaration of 'TMatrix'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2143: syntax error : missing ';' before '{'
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2447: '{' : missing function header (old-style formal list?)
+     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(375): warning C4138: '*/' found outside of comment
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2059: syntax error : 'namespace'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2143: syntax error : missing ';' before '{'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(16): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2065: 'auto_ptr' : undeclared identifier
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1413) : see reference to class template instantiation 'std::tr1::_Ptr_base<_Ty>' being compiled
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2065: '_Other' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2182: '_Reset' : illegal use of type 'void'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2365: 'std::tr1::_Ptr_base<_Ty>::_Reset' : redefinition; previous definition was 'member function'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1333): error C2998: 'int _Reset' : cannot be a template definition
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1503): error C2061: syntax error : identifier 'auto_ptr'
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1708) : see reference to class template instantiation 'std::tr1::shared_ptr<_Ty>' being compiled
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2065: 'auto_ptr' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2065: '_Right' : undeclared identifier
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): error C2365: 'std::tr1::shared_ptr<_Ty>::operator =' : redefinition; previous definition was 'member function'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\memory(1593): fatal error C1903: unable to recover from previous error(s); stopping compilation
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.21
