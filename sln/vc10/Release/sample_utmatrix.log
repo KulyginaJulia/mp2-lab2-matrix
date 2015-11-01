@@ -1,27 +1,28 @@
-﻿Build started 01.11.2015 16:16:22.
-     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" on node 3 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Release\sample_utmatrix.lastbuildstate".
-       InitializeBuildStatus:
+﻿Build started 01.11.2015 21:29:32.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
          Touching "Release\sample_utmatrix.unsuccessfulbuild".
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\samples\sample_matrix.cpp
          sample_matrix.cpp
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(262) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(362): error C2059: syntax error : ''template<''
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2955: 'TMatrix' : use of class template requires template argument list
-                 C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(234) : see declaration of 'TMatrix'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(363): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2143: syntax error : missing ';' before '{'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(364): error C2447: '{' : missing function header (old-style formal list?)
-     1>C:\Users\Liza\mp2-lab2-matrix\include\utmatrix.h(375): warning C4138: '*/' found outside of comment
-     1>..\..\samples\sample_matrix.cpp(12): error C2059: syntax error : 'using'
-     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" (rebuild target(s)) -- FAILED.
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(261) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(385): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
+                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247) : see declaration of 'TMatrix<ValType>::operator *'
+                 definition
+                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
+                 existing declarations
+                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+                 ..\..\samples\sample_matrix.cpp(17) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
+                 with
+                 [
+                     ValType=int
+                 ]
+     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.85
+Time Elapsed 00:00:00.80

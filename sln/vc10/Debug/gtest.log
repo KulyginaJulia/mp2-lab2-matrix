@@ -1,20 +1,17 @@
-﻿Build started 01.11.2015 15:22:18.
-     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\gtest.vcxproj" on node 2 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\gtest.lastbuildstate".
-       InitializeBuildStatus:
+﻿Build started 01.11.2015 16:57:37.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\gtest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
          Creating "Debug\gtest.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D GTEST_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\gtest\gtest-all.cc"
-         gtest-all.cc
+         All outputs are up-to-date.
        Lib:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib" /NOLOGO "Debug\gtest-all.obj"
+         All outputs are up-to-date.
          gtest.vcxproj -> C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib
        FinalizeBuildStatus:
          Deleting file "Debug\gtest.unsuccessfulbuild".
          Touching "Debug\gtest.lastbuildstate".
-     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\gtest.vcxproj" (rebuild target(s)).
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\gtest.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.87
+Time Elapsed 00:00:00.15

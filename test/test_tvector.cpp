@@ -32,14 +32,14 @@ TEST(TVector, can_create_copied_vector)
 TEST(TVector, copied_vector_is_equal_to_source_one)
 {
 	int size = 2;
- 	TVector<int> a(size);
+ 	TVector<int> v1(size);
 
- 	a[0] = 1;
- 	a[1] = 2;
- 	TVector<int> b=a;
+ 	v1[0] = 1;
+ 	v1[1] = 2;
+ 	TVector<int> v2=v1;
 
- 	EXPECT_EQ(1, b[0]);
- 	EXPECT_EQ(2, b[1]);
+ 	EXPECT_EQ(1, v2[0]);
+ 	EXPECT_EQ(2, v1[1]);
 }
 
 TEST(TVector, copied_vector_has_its_own_memory)
@@ -256,7 +256,7 @@ TEST(TVector, can_multiply_vectors_with_equal_size)//Можно найти скалярное произ
 {
 	TVector<int> v1(4);
 	TVector<int> v2(4);
-	int v3, v4;
+	int v3;
 	
 	v1[0] = 1;
 	v2[0] = 2;

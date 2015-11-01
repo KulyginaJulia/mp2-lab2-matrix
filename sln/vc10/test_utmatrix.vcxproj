@@ -103,10 +103,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\test\test_main.cpp" />
+    <ClCompile Include="..\..\test\test_matrix_pointer.cpp" />
     <ClCompile Include="..\..\test\test_tmatrix.cpp" />
     <ClCompile Include="..\..\test\test_tvector.cpp" />
+    <ClCompile Include="test_time.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\matrix_pointer.h" />
+    <ClInclude Include="..\..\include\tvector.h" />
     <ClInclude Include="..\..\include\utmatrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

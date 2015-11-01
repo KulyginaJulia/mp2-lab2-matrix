@@ -19,9 +19,21 @@
     <ClCompile Include="..\..\test\test_tvector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test_time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\test_matrix_pointer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\utmatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\matrix_pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\tvector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

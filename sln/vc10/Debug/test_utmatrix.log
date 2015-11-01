@@ -1,21 +1,18 @@
-﻿Build started 01.11.2015 15:27:49.
+﻿Build started 01.11.2015 16:57:38.
      1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\test_utmatrix.unsuccessfulbuild".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_tvector.cpp
-         test_tvector.cpp
-       ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_utmatrix.exe.embed.manifest.res" Debug\test_utmatrix_manifest.rc 
-       Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:Debug gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_utmatrix.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.lib" /MACHINE:X86 Debug\test_utmatrix.exe.embed.manifest.res
-         Debug\test_main.obj
-         Debug\test_tmatrix.obj
-         Debug\test_tvector.obj
-         "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib"
-     1>LINK : fatal error LNK1104: cannot open file 'gtest.lib'
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_tmatrix.cpp
+         test_tmatrix.cpp
+     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(34): error C2374: 'm2' : redefinition; multiple initialization
+                 c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(30) : see declaration of 'm2'
+     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(36): error C2088: '[' : illegal for class
+     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(36): error C2512: 'testing::AssertionResult' : no appropriate default constructor available
+     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(37): error C2088: '[' : illegal for class
+     1>c:\users\liza\mp2-lab2-matrix\test\test_tmatrix.cpp(37): error C2512: 'testing::AssertionResult' : no appropriate default constructor available
      1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.17
+Time Elapsed 00:00:02.33

@@ -94,6 +94,8 @@
     <ClCompile Include="..\..\samples\sample_matrix.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\matrix_pointer.h" />
+    <ClInclude Include="..\..\include\tvector.h" />
     <ClInclude Include="..\..\include\utmatrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
