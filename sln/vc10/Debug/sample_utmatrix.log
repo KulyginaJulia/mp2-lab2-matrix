@@ -1,20 +1,30 @@
-﻿Build started 01.11.2015 16:57:37.
+﻿Build started 03.11.2015 0:02:02.
      1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\sample_utmatrix.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\sample_utmatrix.unsuccessfulbuild".
        ClCompile:
-         All outputs are up-to-date.
-       ManifestResourceCompile:
-         All outputs are up-to-date.
-       Link:
-         All outputs are up-to-date.
-       Manifest:
-         All outputs are up-to-date.
-       FinalizeBuildStatus:
-         Deleting file "Debug\sample_utmatrix.unsuccessfulbuild".
-         Touching "Debug\sample_utmatrix.lastbuildstate".
-     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" (build target(s)).
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\samples\sample_matrix.cpp
+         sample_matrix.cpp
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\ostream(604): error C2248: 'std::basic_ios<_Elem,_Traits>::basic_ios' : cannot access private member declared in class 'std::basic_ios<_Elem,_Traits>'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\ios(176) : see declaration of 'std::basic_ios<_Elem,_Traits>::basic_ios'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 This diagnostic occurred in the compiler generated function 'std::basic_ostream<_Elem,_Traits>::basic_ostream(const std::basic_ostream<_Elem,_Traits> &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.61
+Time Elapsed 00:00:02.66

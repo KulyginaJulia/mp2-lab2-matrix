@@ -1,133 +1,21 @@
-﻿Build started 01.11.2015 21:29:32.
+﻿Build started 03.11.2015 0:17:03.
      1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Release\test_utmatrix.unsuccessfulbuild".
+         Creating "Release\test_utmatrix.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_matrix_pointer.cpp ..\..\test\test_tmatrix.cpp ..\..\test\test_tvector.cpp test_time.cpp
-         test_matrix_pointer.cpp
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(123): error C2059: syntax error : ')'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2065: 'Size' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2514: 'TPointerMatrix' : class has no constructors
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(4) : see declaration of 'TPointerMatrix'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2059: syntax error : 'for'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ')' before ';'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '<'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '++'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2086: 'int i' : redefinition
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126) : see declaration of 'i'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2059: syntax error : ')'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '{'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2447: '{' : missing function header (old-style formal list?)
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(129): error C2059: syntax error : 'return'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2059: syntax error : '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2143: syntax error : missing ';' before '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2059: syntax error : '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2955: 'TPointerMatrix' : use of class template requires template argument list
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(4) : see declaration of 'TPointerMatrix'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2143: syntax error : missing ';' before '{'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2447: '{' : missing function header (old-style formal list?)
-         test_tmatrix.cpp
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(261) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(385): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247) : see declaration of 'TMatrix<ValType>::operator *'
-                 definition
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
-                 existing declarations
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 ..\..\test\test_tmatrix.cpp(7) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-                 with
-                 [
-                     ValType=int
-                 ]
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
-     1>..\..\test\test_tmatrix.cpp(192): error C2679: binary '*' : no operator found which takes a right-hand operand of type 'TMatrix<ValType>' (or there is no acceptable conversion)
-                 with
-                 [
-                     ValType=int
-                 ]
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): could be 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-                 with
-                 [
-                     ValType=int
-                 ]
-                 while trying to match the argument list '(TMatrix<ValType>, TMatrix<ValType>)'
-                 with
-                 [
-                     ValType=int
-                 ]
-     1>..\..\test\test_tmatrix.cpp(201): error C2679: binary '*' : no operator found which takes a right-hand operand of type 'TMatrix<ValType>' (or there is no acceptable conversion)
-                 with
-                 [
-                     ValType=int
-                 ]
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): could be 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
-                 with
-                 [
-                     ValType=int
-                 ]
-                 while trying to match the argument list '(TMatrix<ValType>, TMatrix<ValType>)'
-                 with
-                 [
-                     ValType=int
-                 ]
-         test_tvector.cpp
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(261) : see reference to class template instantiation 'TMatrix<ValType>' being compiled
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247): error C2143: syntax error : missing ',' before '&'
-     1>c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(385): error C2244: 'TMatrix<ValType>::operator *' : unable to match function definition to an existing declaration
-                 c:\users\liza\mp2-lab2-matrix\include\utmatrix.h(247) : see declaration of 'TMatrix<ValType>::operator *'
-                 definition
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const TMatrix<ValType> &)'
-                 existing declarations
-                 'TMatrix<ValType> TMatrix<ValType>::operator *(const int)'
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_time.cpp
          test_time.cpp
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(123): error C2059: syntax error : ')'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2065: 'Size' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(125): error C2514: 'TPointerMatrix' : class has no constructors
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(4) : see declaration of 'TPointerMatrix'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2059: syntax error : 'for'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ')' before ';'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '<'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '++'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2086: 'int i' : redefinition
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126) : see declaration of 'i'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2059: syntax error : ')'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2143: syntax error : missing ';' before '{'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(126): error C2447: '{' : missing function header (old-style formal list?)
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(129): error C2059: syntax error : 'return'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2059: syntax error : '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2143: syntax error : missing ';' before '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(130): error C2059: syntax error : '}'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2955: 'TPointerMatrix' : use of class template requires template argument list
-                 C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(4) : see declaration of 'TPointerMatrix'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2065: 'ValType' : undeclared identifier
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2143: syntax error : missing ';' before '{'
-     1>C:\Users\Liza\mp2-lab2-matrix\include\matrix_pointer.h(133): error C2447: '{' : missing function header (old-style formal list?)
-     1>test_time.cpp(26): error C2065: 'TMatrix' : undeclared identifier
-     1>test_time.cpp(26): error C2062: type 'double' unexpected
-     1>test_time.cpp(27): error C2065: 'a' : undeclared identifier
-     1>test_time.cpp(27): error C2228: left of '.GetSize' must have class/struct/union
+     1>..\..\test\test_time.cpp(26): error C2065: 'TMatrix' : undeclared identifier
+     1>..\..\test\test_time.cpp(26): error C2062: type 'int' unexpected
+     1>..\..\test\test_time.cpp(27): error C2065: 'a' : undeclared identifier
+     1>..\..\test\test_time.cpp(27): error C2228: left of '.GetSize' must have class/struct/union
                  type is ''unknown-type''
-     1>test_time.cpp(28): error C2065: 'a' : undeclared identifier
-     1>test_time.cpp(31): error C2065: 'b' : undeclared identifier
-     1>test_time.cpp(31): error C2065: 'a' : undeclared identifier
-     1>test_time.cpp(31): error C2065: 'a' : undeclared identifier
+     1>..\..\test\test_time.cpp(28): error C2065: 'a' : undeclared identifier
+     1>..\..\test\test_time.cpp(31): error C2065: 'b' : undeclared identifier
+     1>..\..\test\test_time.cpp(31): error C2065: 'a' : undeclared identifier
+     1>..\..\test\test_time.cpp(31): error C2065: 'a' : undeclared identifier
      1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:04.20
+Time Elapsed 00:00:03.76

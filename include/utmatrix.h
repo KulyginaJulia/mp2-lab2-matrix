@@ -47,16 +47,16 @@ public:
   ValType  operator*(const TVector &v);     // скалярное произведение
 
   // ввод-вывод
-  friend istream& operator>>(istream in, TVector &v)
+  friend istream& operator>>(istream &in, TVector &v)
   {
 	   for (int i = 0; i < v.Size; i++)
 		   in >> v.pVector[i];
     return in;
   }
-  friend ostream& operator<<(ostream out, const TVector &v)
+  friend ostream& operator<<(ostream &out, const TVector &v)
   {
 	  for (int i = 0; i < v.Size + v.StartIndex; i++)
-      out << v[i] << ' ' << endl;
+		  out << v.pVector[i] << ' ' << endl;
     return out;
   }
 };
@@ -244,7 +244,8 @@ public:
   TMatrix& operator= (const TMatrix &mt);        // присваивание
   TMatrix  operator+ (const TMatrix &mt);        // сложение
   TMatrix  operator- (const TMatrix &mt);        // вычитание
-  TMatrix  operator*(const Tmatrix &mt);		 //умножение двух матриц
+  TMatrix  operator*(TMatrix &mt);		 //умножение двух матриц
+
 
   // ввод / вывод
   friend istream& operator>>(istream &in, TMatrix &mt){
@@ -370,11 +371,11 @@ TMatrix<ValType> TMatrix<ValType>::operator-(const TMatrix<ValType> &mt)
 	return result;
 } /*-------------------------------------------------------------------------*/
 
-template <class ValType> // умножение двух матриц
-TMatrix<ValType> TMatrix<ValType>::operator*(const TMatrix<ValType> &mt)
+/*template <class ValType> // умножение двух матриц
+TMatrix<ValType> TMatrix<ValType>::operator*(TMatrix<ValType> &mt)
 {
 	if (Size != mt.Size) {
-		throw invalid_argument("Матрицы разного размера * utmatrix");
+		throw "Матрицы разного размера * utmatrix";
 	}
 	TMatrix<ValType> result(Size);
 	for (int i = 0; i < Size; i++)
@@ -382,8 +383,24 @@ TMatrix<ValType> TMatrix<ValType>::operator*(const TMatrix<ValType> &mt)
 			for (int k = 0; k <= j; k++)
 				result[i][j] = result[i][j] + ((*this)[i][k])*(mt[k][j]);
 	return result;
-} /*-------------------------------------------------------------------------*/
+} *//*-------------------------------------------------------------------------*/
 
+template <class ValType>
+TMatrix<ValType> TMatrix<ValType> :: operator* ( TMatrix<ValType> & mt)//умножение двух матриц
+{
+	if (Size != mt.Size) 
+		throw "Разные размеры матриц * utmatrix";
+	TMatrix<ValType> result(Size);
+	for (int i = 0; i < (this->Size); i++){
+		for (int j = i; j < (this->Size); j++){
+			result[i][j] = 0;
+			for (int k = 0; k <= j; k++){
+			result[i][j] = result[i][j] + ((*this)[i][k] * (mt[k][j]));
+			}
+		}
+	}
+	return result;
+}/*-------------------------------------------------------------------------*/
 // TVector О3 Л2 П4 С6
 // TMatrix О2 Л2 П3 С3
 

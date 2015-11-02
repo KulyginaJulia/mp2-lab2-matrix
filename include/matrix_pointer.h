@@ -143,13 +143,16 @@ TPointerMatrix<ValType> TPointerMatrix<ValType>::operator-(const TPointerMatrix<
 
 template <class ValType> 
 TPointerMatrix<ValType> TPointerMatrix<ValType>::operator* (const TPointerMatrix<ValType> &mt) {
-	if (Size != mt.Size) {
-		throw "Вектора разной длины * matrix_pointer";
-	}
+	if (Size != mt.Size) 
+		throw "Разные размеры матриц * utmatrix";
 	TPointerMatrix<ValType> result(Size);
-	for (int i = 0; i < this->Size; i++)
-		for (int j = i; j < this->Size; j++)
-			for (int k = 0; k <= j; k++)
-				result[i][j] = result[i][j] + ((*this)[i][k])*(mt[k][j]);
+	for (int i = 0; i < (this->Size); i++){
+		for (int j = i; j < (this->Size); j++){
+			result[i][j] = 0;
+			for (int k = 0; k <= j; k++){
+			result[i][j] = result[i][j] + ((*this)[i][k] * (mt[k][j]));
+			}
+		}
+	}
 	return result;
 } /*-------------------------------------------------------------------------*/ 

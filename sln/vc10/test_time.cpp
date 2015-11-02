@@ -24,7 +24,7 @@ TEST(Time, TMatrix_time) {
 
 	start = clock();
 	TMatrix<double> a(size), b(size);
-	for (int i = 0; i < a.GetSize(); i++) {
+	for (int i = 0; i < a.Size; i++) {
 		a[i][i] = i;
 	}
 

@@ -183,18 +183,27 @@ TEST(TMatrix, cant_subtract_matrixes_with_not_equal_size)
 
 TEST(TMatrix, can_multiply_matrixes_with_equal_size)//Можно найти произведение двух матриц с одинаковым размером
 {
-	const int size = 4;
-	TMatrix<int> m1(size), m2(size);
-	TMatrix<int> m3(size);
-	
-	m1[0][0] = 1;
-	m2[0][0] = 2;
-	m3 = m2 * m1;
+	const int size = 2;
+	TMatrix<int> m(size), result1(size), result2(size);
 
-	EXPECT_EQ(m3[0][0], 2);
+	// 1 0
+	// 0 1
+	m[0][0] = 1;
+	m[1][1] = 1;
+
+	// 1 0
+	// 0 1
+	result1[0][0] = 1;
+	result1[1][1] = 1;
+	result2 = m*m;
+
+	EXPECT_EQ(result1[0][0], result2[0][0]);
+//	EXPECT_EQ(result1[0][1], result2[0][1]);
+//	EXPECT_EQ(result1[1][0], result2[1][0]);
+//	EXPECT_EQ(result1[1][1], result2[1][1]);
 }
 
-TEST(TVector, cant_multiply_vectors_with_not_equal_size)
+TEST(TMatrix, cant_multiply_matrixes_with_not_equal_size)
 {
 	TMatrix<int> m1(4), m2(5);
 	

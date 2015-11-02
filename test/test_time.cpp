@@ -8,7 +8,7 @@ TEST(Time, TPointerMatrix_time) {
 	int size = 100;
 
 	start = clock();
-	TPointerMatrix<double> a(size), b(size);
+	TPointerMatrix<int> a(size), b(size);
 	for (int i = 0; i < a.GetSize(); i++)
 	{
 		a[i][i] = i;
@@ -23,12 +23,12 @@ TEST(Time, TMatrix_time) {
 	int size = 100;
 
 	start = clock();
-	TMatrix<double> a(size), b(size);
-	for (int i = 0; i < a.GetSize(); i++) {
-		a[i][i] = i;
+	TMatrix<int> c(size), d(size);
+	for (int i = 0; i < c.GetSize(); i++) {
+		c[i][i] = i;
 	}
 
-	b = a*a;
+	d = c*c;
 	end = clock();
 	cout << "TMatrixTime: " << ((double)end - start) / ((double)CLOCKS_PER_SEC) << endl;
 } 

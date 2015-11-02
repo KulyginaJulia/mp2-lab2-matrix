@@ -19,10 +19,10 @@
     <ClCompile Include="..\..\test\test_tvector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_time.cpp">
+    <ClCompile Include="..\..\test\test_matrix_pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\test\test_matrix_pointer.cpp">
+    <ClCompile Include="..\..\test\test_time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

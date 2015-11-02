@@ -2,7 +2,7 @@
 #define __TMATRIX_H__
 
 #include <iostream>
-#include "utmatrix.h"
+//#include "utmatrix.h"
 using namespace std;
 
 const int MAX_VECTOR_SIZE = 100000000;
@@ -39,13 +39,13 @@ public:
   ValType  operator*(const TVector &v);     // скал€рное произведение
 
   // ввод-вывод
-  friend istream& operator>>(istream in, TVector &v)
+  friend istream& operator>>(istream &in, TVector &v)
   {
 	   for (int i = 0; i < v.Size; i++)
 		   in >> v.pVector[i];
     return in;
   }
-  friend ostream& operator<<(ostream out, const TVector &v)
+  friend ostream& operator<<(ostream &out, const TVector &v)
   {
 	  for (int i = 0; i < v.Size + v.StartIndex; i++)
       out << v[i] << ' ' << endl;
