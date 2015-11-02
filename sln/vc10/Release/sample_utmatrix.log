@@ -1,4 +1,4 @@
-﻿Build started 03.11.2015 0:17:03.
+﻿Build started 03.11.2015 1:00:53.
      1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\sample_utmatrix.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\sample_utmatrix.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -14,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.12
+Time Elapsed 00:00:00.15

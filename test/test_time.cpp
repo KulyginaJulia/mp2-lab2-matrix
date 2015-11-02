@@ -1,34 +1,19 @@
 #include <time.h>
 #include <gtest.h>
 #include "matrix_pointer.h"
-#include "utmatrix.h"
 
 TEST(Time, TPointerMatrix_time) {
 	clock_t start, end;
-	int size = 100;
+	int size = 250;
 
 	start = clock();
-	TPointerMatrix<int> a(size), b(size);
-	for (int i = 0; i < a.GetSize(); i++)
+	TPointerMatrix<int> m1(size), m2(size);
+	for (int i = 0; i < m1.GetSize(); i++)
 	{
-		a[i][i] = i;
+		m1[i][i] = i;
 	}
 
-	b = a*a;
+	m2 = m1*m1;
 	end = clock();
 	cout << "TPointerMatrixTime: "<<((double)end - start) / ((double)CLOCKS_PER_SEC)<<endl;
 }
-TEST(Time, TMatrix_time) {
-	clock_t start, end;
-	int size = 100;
-
-	start = clock();
-	TMatrix<int> c(size), d(size);
-	for (int i = 0; i < c.GetSize(); i++) {
-		c[i][i] = i;
-	}
-
-	d = c*c;
-	end = clock();
-	cout << "TMatrixTime: " << ((double)end - start) / ((double)CLOCKS_PER_SEC) << endl;
-} 

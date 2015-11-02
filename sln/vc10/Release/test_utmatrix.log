@@ -1,21 +1,29 @@
-﻿Build started 03.11.2015 0:17:03.
-     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 3 (build target(s)).
+﻿Build started 03.11.2015 1:01:47.
+     1>Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\test_utmatrix.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_time.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../gtest /I../../include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_time.cpp test_time2.cpp
          test_time.cpp
-     1>..\..\test\test_time.cpp(26): error C2065: 'TMatrix' : undeclared identifier
-     1>..\..\test\test_time.cpp(26): error C2062: type 'int' unexpected
-     1>..\..\test\test_time.cpp(27): error C2065: 'a' : undeclared identifier
-     1>..\..\test\test_time.cpp(27): error C2228: left of '.GetSize' must have class/struct/union
-                 type is ''unknown-type''
-     1>..\..\test\test_time.cpp(28): error C2065: 'a' : undeclared identifier
-     1>..\..\test\test_time.cpp(31): error C2065: 'b' : undeclared identifier
-     1>..\..\test\test_time.cpp(31): error C2065: 'a' : undeclared identifier
-     1>..\..\test\test_time.cpp(31): error C2065: 'a' : undeclared identifier
-     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (build target(s)) -- FAILED.
+         test_time2.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\test_utmatrix.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:Release gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\test_utmatrix.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\test_utmatrix.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\test_utmatrix.lib" /MACHINE:X86 Release\test_main.obj
+         Release\test_matrix_pointer.obj
+         Release\test_time.obj
+         Release\test_tmatrix.obj
+         Release\test_tvector.obj
+         Release\test_time2.obj
+         "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\gtest.lib"
+         Generating code
+         Finished generating code
+         test_utmatrix.vcxproj -> C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\test_utmatrix.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Liza\mp2-lab2-matrix\sln\vc10\Release\test_utmatrix.exe;#1" /manifest Release\test_utmatrix.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\test_utmatrix.unsuccessfulbuild".
+         Touching "Release\test_utmatrix.lastbuildstate".
+     1>Done Building Project "C:\Users\Liza\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:03.76
+Time Elapsed 00:00:19.33
