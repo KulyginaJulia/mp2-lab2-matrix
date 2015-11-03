@@ -2,6 +2,7 @@
 
 #include <gtest.h>
 
+/*
 TEST(TMatrix, can_create_matrix_with_positive_length)
 {
   ASSERT_NO_THROW(TMatrix<int> m(5));
@@ -180,6 +181,7 @@ TEST(TMatrix, cant_subtract_matrixes_with_not_equal_size)
 	
 	ASSERT_ANY_THROW(TMatrix<int> m(m2 - m1));
 }
+*/
 
 TEST(TMatrix, can_multiply_matrixes_with_equal_size)//ћожно найти произведение двух матриц с одинаковым размером
 {
@@ -203,9 +205,10 @@ TEST(TMatrix, can_multiply_matrixes_with_equal_size)//ћожно найти произведение д
 //	EXPECT_EQ(result1[1][1], result2[1][1]);
 }
 
+/*
 TEST(TMatrix, cant_multiply_matrixes_with_not_equal_size)
 {
 	TMatrix<int> m1(4), m2(5);
 	
 	ASSERT_ANY_THROW(TMatrix<int> m(m1 * m2));
-}
+}*/

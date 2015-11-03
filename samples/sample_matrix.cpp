@@ -6,9 +6,11 @@
 // Тестирование верхнетреугольной матрицы
 
 #include <iostream>
-//#include <ostream>
-//#include <istream>
 #include "utmatrix.h"
+#include "tvector.h"
+#include "matrix_pointer.h"
+#include <string>
+
 using namespace std;
 //---------------------------------------------------------------------------
 
@@ -26,6 +28,12 @@ void main()
       b[i][j] = (i * 10 + j) * 100;
     }
   c = a + b;
+  TVector <int> a1(2);
+  a1[0] = 1;
+  a1[1] = 0;
+
+  cout << "Vector is " << a1 << endl;
+  
   cout << "Matrix a = " << endl << a << endl;
   cout << "Matrix b = " << endl << b << endl;
   cout << "Matrix c = a + b" << endl << c << endl; 

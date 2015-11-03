@@ -1,8 +1,8 @@
-#ifndef __TMATRIX_H__
-#define __TMATRIX_H__
+#ifndef __TVECTOR_H__
+#define __TVECTOR_H__
 
 #include <iostream>
-//#include "utmatrix.h"
+#include <string>
 using namespace std;
 
 const int MAX_VECTOR_SIZE = 100000000;
@@ -24,6 +24,7 @@ public:
   int GetStartIndex(){ return StartIndex; } // индекс первого элемента
 
   ValType& operator[](int pos);             // доступ
+  ValType& operator[](int pos) const;       // доступ константный
   bool operator==(const TVector &v) const;  // сравнение
   bool operator!=(const TVector &v) const;  // сравнение
   TVector& operator=(const TVector &v);     // присваивание
@@ -39,19 +40,56 @@ public:
   ValType  operator*(const TVector &v);     // скалярное произведение
 
   // ввод-вывод
-  friend istream& operator>>(istream &in, TVector &v)
+
+//  template <class ValType>
+   friend istream& operator>>(istream &in, TVector &v)
   {
 	   for (int i = 0; i < v.Size; i++)
 		   in >> v.pVector[i];
     return in;
   }
+
+ //  template <class ValType>
   friend ostream& operator<<(ostream &out, const TVector &v)
   {
 	  for (int i = 0; i < v.Size + v.StartIndex; i++)
-      out << v[i] << ' ' << endl;
+		 out << v[i] << ' ' << endl;
     return out;
   }
 };
+
+template <class ValType> // доступ
+ValType& TVector<ValType>::operator[](int pos)
+{
+	 	if (pos < 0)
+ 	{
+ 		throw "[] pos < 0";
+ 	}
+ 	if (pos >= StartIndex + Size)
+ 	{
+ 		throw "[] pos > MAX_VECTOR_SIZE" ;
+ 	}
+ 	if (pos < StartIndex) {
+ 		return *new ValType();
+ 	}
+	return pVector[pos - StartIndex];
+} /*-------------------------------------------------------------------------*/
+template <class ValType> // доступ
+ValType& TVector<ValType>::operator[](int pos) const
+{
+	 	if (pos < 0)
+ 	{
+ 		throw "[] pos < 0";
+ 	}
+ 	if (pos >= StartIndex + Size)
+ 	{
+ 		throw "[] pos > MAX_VECTOR_SIZE" ;
+ 	}
+ 	if (pos < StartIndex) {
+ 		return *new ValType();
+ 	}
+	return pVector[pos - StartIndex];
+} /*-------------------------------------------------------------------------*/
 
 template <class ValType>
 TVector<ValType>::TVector(int s, int si)
@@ -93,22 +131,7 @@ TVector<ValType>::~TVector()
 	delete []pVector;
 } /*-------------------------------------------------------------------------*/
 
-template <class ValType> // доступ
-ValType& TVector<ValType>::operator[](int pos)
-{
-	 	if (pos < 0)
- 	{
- 		throw "[] pos < 0";
- 	}
- 	if (pos >= StartIndex + Size)
- 	{
- 		throw "[] pos > MAX_VECTOR_SIZE" ;
- 	}
- 	if (pos < StartIndex) {
- 		return *new ValType();
- 	}
-	return pVector[pos - StartIndex];
-} /*-------------------------------------------------------------------------*/
+
 
 template <class ValType> // сравнение
 bool TVector<ValType>::operator==(const TVector &v) const

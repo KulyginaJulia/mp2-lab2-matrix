@@ -1,3 +1,7 @@
+#ifndef _MATRIX_POINTER_
+#define _MATRIX_POINTER_
+
+
 #include "tvector.h"
 
 template <class ValType>
@@ -12,25 +16,31 @@ public:
 	virtual ~TPointerMatrix();
 
 	int GetSize() const { return Size; }
-	TVector<ValType>& operator[](int pos) const;             // доступ
+	void SetSize(int mySize) { Size = mySize; }
+	TVector<ValType>& operator[](int pos);             // доступ
 	bool operator==(const TPointerMatrix &mt) const;      // сравнение
 	bool operator!=(const TPointerMatrix &mt) const;      // сравнение
 	TPointerMatrix& operator= (const TPointerMatrix &mt);        // присваивание
 	TPointerMatrix  operator+ (const TPointerMatrix &mt);        // сложение
 	TPointerMatrix  operator- (const TPointerMatrix &mt);        // вычитание
-	TPointerMatrix  operator* (const TPointerMatrix &mt);		 // умножение двух матриц
+	TPointerMatrix  operator* (TPointerMatrix &mt);		 // умножение двух матриц
 
 	// ввод / вывод
+	//template <class ValType>
 	friend istream& operator>>(istream &in, TPointerMatrix &mt) {
-		in >> mt.Size;
-		for (int i = 0; i < mt.Size; i++)
-			in >> mt.pVector[i];
+		int size;
+		in >> size;
+		mt.SetSize(size);
+		for (int i = 0; i < mt.GetSize(); i++)
+			in >> mt[i];
 		return in;
 	}
+
+//	template <class ValType>
 	friend ostream & operator<<(ostream &out, const TPointerMatrix &mt) {
-		out << mt.Size << endl;
-		for (int i = 0; i < mt.Size; i++)
-			out << mt.pMatrix[i] << endl;
+		out << mt.GetSize() << endl;
+		for (int i = 0; i < mt.GetSize(); i++)
+			out << mt[i] << endl;
 		return out;
 	}
 };
@@ -66,7 +76,7 @@ TPointerMatrix<ValType>::TPointerMatrix(const TPointerMatrix<ValType> &mt){
 }
 
 template <class ValType> 
-TVector<ValType>& TPointerMatrix<ValType>::operator[](int pos) const {
+TVector<ValType>& TPointerMatrix<ValType>::operator[](int pos) {
 	if (pos < 0 ) {
 		throw "[] pos < 0 matrix_pointer";
 	}if (pos > Size) {
@@ -142,7 +152,7 @@ TPointerMatrix<ValType> TPointerMatrix<ValType>::operator-(const TPointerMatrix<
 } /*-------------------------------------------------------------------------*/
 
 template <class ValType> 
-TPointerMatrix<ValType> TPointerMatrix<ValType>::operator* (const TPointerMatrix<ValType> &mt) {
+TPointerMatrix<ValType> TPointerMatrix<ValType>::operator* ( TPointerMatrix<ValType> &mt) {
 	if (Size != mt.Size) 
 		throw "Разные размеры матриц * utmatrix";
 	TPointerMatrix<ValType> result(Size);
@@ -156,3 +166,5 @@ TPointerMatrix<ValType> TPointerMatrix<ValType>::operator* (const TPointerMatrix
 	}
 	return result;
 } /*-------------------------------------------------------------------------*/ 
+
+#endif
